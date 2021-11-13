@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --mainColor:#64bcf4;
+    --hoverColor:#5bacdf;
+    --bacgroundColor:#f1f8fc;
+    --darkOne:#312f3a;
+    --darkTwo:#454f3b;
+    --lightOne:#919191;
+    --lightTwo:#aaa;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: poppins , sans-serif;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.big-wrapper{
+    padding: 1.7rem 0 2rem;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bacgroundColor);
+}
+.logo img{
+    width: 40px;
+    margin-right: 0.6rem;
+    margin-top: -o.6rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.logo h3{
+    color: var(--darkTwo);
+    font-size: 1.55rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.links ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.links a{
+    color: var(--darkTwo);
+    margin-left: 4.5rem;
+    display: inline-block;
+    transition: 0.3rem;
+
+}
+.links a:hover{
+    transform: scale(1.05);
+    color: var(--hoverColor);
+    
+}
+
+.container{
+    max-width: 81rem;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 3rem;
+    z-index: 10;
+}
+header .container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    display: inline-block;
+    padding: 0.9rem 1.9rem;
+    color: white !important;
+    background-color: var(--mainColor);
+    border-radius: 16px;
+    transition: 0.3s;
+    text-transform: capitalize;
+}
+.btn:hover{
+    background-color: var(--hoverColor);
+    transform: scale(1) !important;
+}
+.showcase-area .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+} 
+.big-title{
+    font-size: 1.4rem;
+    color: var(--darkOne);
+    text-transform: capitalize;
+    line-height: 1.4;
+}
+.text{
+    color: var(--lightOne);
+    font-size: 1.1rem;
+    margin: 1.9rem 0 2.5rem;
+    max-width: 600px;
+    line-height: 2.3;
+}
+.person{
+   
+    
+}
+.toggle-btn{
+    display: inline-block;
+    border: none;
+    background-color: var(--darkOne);
+    color: var(--bacgroundColor);
+    outline: none;
+    height: 39px;
+    width: 39px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.toggle-btn i{
+    line-height: 39px;
+}
+.toggle-btn i:last-child{
+    display: none;
+}
